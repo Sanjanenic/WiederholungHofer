@@ -7,15 +7,15 @@ public class GrenzwertReiche {
         double previous= 0.0;
 
         while (true){
-            //ovako se moze sa uslovom true pisati samo ako hocu beskonacnu petlju koja se prekida samo sa return ili break
-            current+=1/Math.pow(2,n);  //Math je klasa sa matematickim formulama a ova konkrentna .pow je za potenciranje
+                       //ovako se moze sa uslovom true pisati samo ako hocu beskonacnu petlju koja se prekida samo sa return ili break
+            current+=1/Math.pow(2,n);        //Math je klasa sa matematickim formulama a ova konkrentna .pow je za potenciranje
             if(current-previous<0.0001){
                 System.out.println(current);
                 System.out.println(n);
                 return;
             }
 
-            previous=current; //ovako ide dalje kroz niz pa trenutna vrijednost postahje predhodna
+            previous=current;          //ovako ide dalje kroz niz pa trenutna vrijednost postahje predhodna
                     n++;
         }
     }
