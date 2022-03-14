@@ -2,27 +2,39 @@ package com.company;
 
 public class Matrix {
     public static void main(String[] args) {
-        generateIdentityMatrix(7);
+        int [][] ergebnisReturn=generateIdentityMatrix(5,7);
+        printMatrix(ergebnisReturn);
 
     }
-    public static double[][] generateIdentityMatrix(int size){
-        double [][] tabelle = new double [4][3];
+    public static int [][] generateIdentityMatrix(int sizeX, int sizeY){   //ovim sam napravila matricu
+         int [][] tabelle = new int [sizeX][sizeY];
         for(int zeile=0; zeile <tabelle.length; ++zeile){
             for (int spalte=0; spalte<tabelle[zeile].length; ++spalte) {
                 if(zeile==spalte){
-                    System.out.print(tabelle[zeile][spalte] =1);
-                    System.out.println(" ");
-                   // System.out.println(java.util.Arrays.toString(tabelle [zeile][spalte]) );
+                    tabelle[zeile][spalte] =1; //dodijelila vrijednost po dijagonali
+
                 }
 
                 else{
                     tabelle[zeile][spalte] =0;
-                    System.out.print( tabelle[zeile][spalte] =0);
+
                 }
             }
 
         }
         return tabelle;
+
+    }
+    public static void printMatrix(int[][] matrix){
+        for(int zeile=0; zeile <matrix.length; ++zeile) {
+
+            for (int spalte = 0; spalte < matrix[zeile].length; ++spalte) {
+
+                System.out.print(matrix[zeile][spalte]+"\t");
+
+            }
+            System.out.println();
+        }
     }
 }
 

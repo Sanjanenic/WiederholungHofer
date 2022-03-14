@@ -12,7 +12,7 @@ public class ArrayTest {
 //arrays to.String je za lijep ispis
         System.out.println(qu1);
 
-        quartale[0]="Frueling";
+        quartale[0]="Frueling"; //ovako mijenjam jedan element arraya
         System.out.println(Arrays.toString(quartale));
         System.out.println(qu1);
 

@@ -9,23 +9,14 @@ public class ArrayDemo {
          a1 [0]= 3;
          a1 [1]= 4;
          a1 [2]= 5;
-        //System.out.println(Arrays.toString(a1));
 
-      //  a1 [0]= a1[0]+10;
-      //  a1 [1]= a1[1]+5;
-        //a1 [2]= a1[2]+8;
-      //  System.out.println(Arrays.toString(a1));
 
        int [] a2 = {7,1,3};
-       // System.out.print(Arrays.toString(a2));
-       // a2 [0]= a2[0]*21;
-        //a2 [1]= a2[1]*4;
-       // a2 [2]= a2[2]*15;
-        //System.out.print(Arrays.toString(a2));
+
 
 
         for (int z = 0; z<a1.length; ++z){
-            System.out.print(a1[z]+a2[z]);
+            System.out.print(a1[z]+a2[z]);  //z sluzi da iscita iz oba array
             System.out.print(" , ");
 
         }
@@ -37,7 +28,16 @@ public class ArrayDemo {
 
 //muss ich eingabe einfugen
 
-        //
+        //Erstellen Sie die Klasse ArrayDemo mit main-Methode(). Erzeugen
+        //Sie zwei int Arrays mit jeweils einer Länge von 3 und initialisieren
+        //Sie diese mit beliebigen Ganzzahlen. Geben Sie danach auf der
+        //Konsole die elementweise Addition sowie Multiplikation aus.
+        //Bsp.
+        //Array1 => [3,4,5]
+        //Array2 => [7,1,3]
+        //Ausgabe:
+        //+ 10,5,8
+        //* 21,4,15
 
 
     }
