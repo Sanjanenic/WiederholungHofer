@@ -11,5 +11,7 @@ public class Matrix {
        // for(int zeile=0; zeile <tabelle.length; ++zeile){
         //das ist schleife fur undere spalten
         //for (int spalete=0; spalte<tabelle[zeile].length; ++spalete){ //das ist nur Hilfe dam schreibe ich meine Aufbage
-       // tabelle[zeile][spalete]= 7;
+       // tabelle[zeile][spalete]= 42;  so ausgeben
+   //system.out.println(Arra.) //oder so..... za svaki red moram ponovo, koristecu "zeile"kao index
+//
       //  }
