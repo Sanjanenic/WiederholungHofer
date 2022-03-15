@@ -33,19 +33,30 @@ public class ArrayTest2 {
             //Nach Ausgabe aller Quartalszahlen einen Zeienubruch bitte
             System.out.println();
         }
-        //machen wir jetzt eine Methode die soll die verkaufen Zahl eines Smartphons züruck liefern
-        //zalen: unsere verkaufZahlen
-        //welchesscharhone: index der angibt an welche smartphone wir interessiert in (0 basiert
-        //weitere anforderung: wen ungültige wert auf smartphone angegeben wird bitte -1 züruck liefern
 
-
+        System.out.println(verkaufteAnzahlJahr(smartphoneVerkaufZahl, 5));
+        System.out.println(verkaufteAnzahlJahr(smartphoneVerkaufZahl, -1));
+        System.out.println(verkaufteAnzahlJahr(smartphoneVerkaufZahl, 1));
     }
+    //machen wir jetzt eine Methode die soll die verkaufen Zahl eines Smartphons züruck liefern
+    //zalen: unsere verkaufZahlen
+    //welchesscharhone: index der angibt an welche smartphone wir interessiert in (0 basiert
+    //weitere anforderung: wen ungültige wert auf smartphone angegeben wird bitte -1 züruck liefern
+
     public static int verkaufteAnzahlJahr(int [][]zahlen, int welchesSmartphone){
 
-        for( int i=0; i< )
+
+            if(welchesSmartphone <=0 || welchesSmartphone <zahlen.length){
+                return -1;
+
+            }
+            int summe=0;
+            for(int q =0; q<zahlen[welchesSmartphone].length; ++q){
+                summe +=zahlen[welchesSmartphone][q];
+            }
+        return summe;
 
 
-        return 0; //TODO durch korrectek Code bite ersetzen
     }
     //Die folgende Methode sollte uns den namen des Smartphones liefern, das in einem bestimmten Quartal am erfolgreichstes war
     //am erfolgreistes war
@@ -54,6 +65,7 @@ public class ArrayTest2 {
     //quartalNr: für welches quartal soll berechnet werden (von 1 bis 4)- sonst liefert -1
 
      public static String erfolgreistesSmartphoneQuartal(int [][]zahlen, String[]namen, int quartalNr){
+
 
        return""; //TODO durch korrekten Code ersetzen
      }
