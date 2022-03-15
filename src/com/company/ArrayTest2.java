@@ -8,7 +8,7 @@ public class ArrayTest2 {
         String[]smartphoneNamen={"SamsungA 51", "iPhone 13","Huawei 15","Nokia 3210","Xiaomi 7"};
 
         //eine zeile steht für inen smarphone
-        //jede spalte in der zeile fur verkaufte in quartalen: f, sommer, h, wintwer
+        //jede spalte in der zeile fur verkaufte in quartalen: f, sommer, h, winter
 
         int [][]smartphoneVerkaufZahl = {{2000,3000,4000,1000},{2000,3000,4000,1000},
                    {2000,3000,4000,1000},{2000,3000,4000,1000},{2000,3000,4000,1000}};
