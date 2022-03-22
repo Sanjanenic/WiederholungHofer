@@ -16,7 +16,7 @@ public class TomagochiApp {
         System.out.println(erste.x + " "+ erste.y);
 
 
-//in console sollte 0 0 sein, das war eingabe!
+//in console sollte 0 0 sein, das war Übung!
 
 
 

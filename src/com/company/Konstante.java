@@ -23,5 +23,8 @@ public class Konstante {
 
         //nur einmal kann man bei konstatnten zugeweisung machen
 
+        Math.abs(0.2);
+        //ohne import ist auch müglich etwas ausser pakage importieren : at.capus.o2.zam.pr1.projekt1.haeshen.ha -> mit ganze Name von Datei
+
     }
 }
