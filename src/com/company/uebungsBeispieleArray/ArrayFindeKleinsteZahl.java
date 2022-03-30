@@ -22,8 +22,9 @@ public class ArrayFindeKleinsteZahl {
         System.out.println(Arrays.toString(mittelwertBerechnen(x)));
 
 //pozvati metodu koja vraca array napravljen od zajednickih elemenata dva druga arrays
- String namen1[]={"Anna","Lara","Sara","Lisa"};
- String namen2[]={"Julia","Sara","Lisa", "Liv"};
+        //i odredjuje koji array od dva prametra je kraci pa takvu duzinu daje arrayju koji vraca
+ String namen1[]={"Lara","Sara","Lisa","Liv","Iv" };
+ String namen2[]={"Julia","Sara","Lisa", "Liv","Iva","Mira"};
         System.out.println(Arrays.toString(luckyLooser(namen1,namen2)));
 
     }
@@ -126,8 +127,16 @@ mittelwertArray[i]=average; //ova linija upisuje u niz novi i mora biti u vanjsk
 //Größere der beiden Parameter)
 
     public static String[]luckyLooser (String []namen1, String[]namen2){
-     String [] trostpreisGewinnerInnen= new String [namen1.length];
+        int indexKurzer=0;  //pomocna varijabla za odredjivanje koji je niz kraci
+        if(namen1.length<namen2.length){  //if petlja koja poredi duzinu dva niza i upisuje u varijablu kraci
+            indexKurzer=namen1.length;
+        }
+        else if(namen1.length>namen2.length){
+            indexKurzer=namen2.length;
+        }
+     String [] trostpreisGewinnerInnen= new String [indexKurzer];
     String hilfe =" ";
+
 
      for (int i=0; i< namen1.length;i++){
          for(int i2=0; i2<namen2.length; i2++) {
@@ -156,9 +165,15 @@ mittelwertArray[i]=average; //ova linija upisuje u niz novi i mora biti u vanjsk
 //Erweiterte Version: Berechnen Sie zuerst wie viele unterschiedliche Geräte es gibt. (Achtung knifflig)
 
     public static int [][]smartphoneSales(int [][]verkauftenTelefone){
+    int[][] verkaufsFurJederHandy=new int [][];
 
+    for(int i =0; i< verkauftenTelefone.length; i++){
+        for(int j=0;j< verkauftenTelefone[i].length; j++){
 
-        return
+        }
+    }
+
+        return verkaufsFurJederHandy;
 
     }
 
