@@ -164,18 +164,18 @@ mittelwertArray[i]=average; //ova linija upisuje u niz novi i mora biti u vanjsk
 //Einfache Version: Nehmen Sie an es gibt maximal 10 unterschiedliche Geräte.
 //Erweiterte Version: Berechnen Sie zuerst wie viele unterschiedliche Geräte es gibt. (Achtung knifflig)
 
-    public static int [][]smartphoneSales(int [][]verkauftenTelefone){
-    int[][] verkaufsFurJederHandy=new int [][];
-
-    for(int i =0; i< verkauftenTelefone.length; i++){
-        for(int j=0;j< verkauftenTelefone[i].length; j++){
-
-        }
-    }
-
-        return verkaufsFurJederHandy;
-
-    }
+//    public static int [][]smartphoneSales(int [][]verkauftenTelefone){
+//    int[][] verkaufsFurJederHandy=new int [][];
+//
+//    for(int i =0; i< verkauftenTelefone.length; i++){
+//        for(int j=0;j< verkauftenTelefone[i].length; j++){
+//
+//        }
+//    }
+//
+//        return verkaufsFurJederHandy;
+//
+//    }
 
 }
 

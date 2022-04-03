@@ -41,7 +41,7 @@ public class ArrayTest2 {
 //ovdje moram prepraviti da vazeci budu kvartali 1,2,3,4,
         System.out.println(verkaufteAnzahlJahr(smartphoneVerkaufZahl, 5));
         System.out.println(verkaufteAnzahlJahr(smartphoneVerkaufZahl, -1));
-        System.out.println(verkaufteAnzahlJahr(smartphoneVerkaufZahl, 1));
+        System.out.println(verkaufteAnzahlJahr(smartphoneVerkaufZahl, 0));
         System.out.println(erfolgreistesSmartphoneQuartal(smartphoneVerkaufZahl, smartphoneNamen, 3));
         System.out.println(erfolgreistesSmartphoneQuartal(smartphoneVerkaufZahl, smartphoneNamen, 1));
 
@@ -77,7 +77,7 @@ public class ArrayTest2 {
     //quartalNr: für welches quartal soll berechnet werden (von 1 bis 4)- sonst liefert -1
 
     public static String erfolgreistesSmartphoneQuartal(int[][] zahlen, String[] namen, int quartalNr) {
-        int najveciBroj = zahlen[0][quartalNr]; //pomocna varijabla za uporedjivanje brojeva u nizu
+        int najveciBroj = zahlen[0][quartalNr-1]; //pomocna varijabla za uporedjivanje brojeva u nizu
         int indexNajvecegBroja = 0;
         //pomocna varijabla za odredjivanje indexa imena telefona koji ima najvecu prodaju u trazenom kvartalu
         for (int i = 0; i < zahlen.length; i++) {
